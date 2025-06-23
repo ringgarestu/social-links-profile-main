@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --slate-700: hsl(0, 0%, 20%);
+  --slate-800: hsl(0, 0%, 12%);
+  --slate-900: hsl(0, 0%, 8%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background-color: var(--slate-900);
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  min-block-size: 100vh;
+}
+
+.card {
+  background-color: var(--slate-800);
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.card-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card-head img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  object-position: center;
+  background-color: var(--white);
+}
+
+.avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.card-head h1 {
+  color: var(--white);
+  font-family: Inter, sans-serif;
+  margin: 0px;
+  font-size: 14px;
+}
+
+.card-head p {
+  color: var(--green);
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+}
+
+article p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-family: Inter, sans-serif;
+  font-size: 11px;
+}
+
+.container-socmed {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+button {
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: var(--slate-700);
+}
+button a {
+  color: var(--white);
+  font-family: Inter, sans-serif;
+  text-decoration: none;
+  font-size: 12px;
+}
